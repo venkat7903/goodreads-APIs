@@ -27,6 +27,10 @@ const initializeDBAndServer = async () => {
 };
 initializeDBAndServer();
 
+app.get("/", async (request, response) => {
+  response.send("Welcome to goodreads Books. Try different book APIs");
+});
+
 // Get Books API
 app.get("/books/", async (request, response) => {
   const getBooksQuery = `
