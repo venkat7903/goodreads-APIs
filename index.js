@@ -7,17 +7,7 @@ const sqlite3 = require("sqlite3");
 const app = express();
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: "*",
-  })
-);
-
-app.use(
-  cors({
-    methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
-  })
-);
+app.use(cors());
 
 const dbPath = path.join(__dirname, "goodreads.db");
 
