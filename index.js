@@ -27,6 +27,7 @@ const initializeDBAndServer = async () => {
 };
 initializeDBAndServer();
 
+// Welcome API
 app.get("/", async (request, response) => {
   response.send("Welcome to goodreads Books. Try different book APIs");
 });
@@ -155,3 +156,5 @@ app.get("/authors/:authorId/books/", async (request, response) => {
   const booksArray = await db.all(getBooksQuery);
   response.send(booksArray);
 });
+
+module.exports = app;

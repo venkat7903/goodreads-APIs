@@ -1,16 +1,16 @@
-GET http://localhost:3000/books/
+GET https://goodreads-apis-a6j5.onrender.com/books/
 
 ###
 
-GET http://localhost:3000/books/42/
+GET https://goodreads-apis-a6j5.onrender.com/books/50/
 
 ###
 
-POST http://localhost:3000/books/
+POST https://goodreads-apis-a6j5.onrender.com/books/
 Content-Type: application/json
 
 {
-  "title": "Harry Potter and the Order of the Phoenix",
+  "title": "Raja the king",
   "authorId": 1,
   "rating": 4.62,
   "ratingCount": 126559,
